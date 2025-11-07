@@ -1,0 +1,28 @@
+<nav>
+  <a href="dashboard.html">Dashboard</a> |
+  <a href="add_bug.html">Add Bug</a> |
+  <a href="bug_list.html">Bug List</a> |
+  <a href="login.html">Logout</a>
+</nav>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Bug</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Add Bug</h2>
+  <input type="text" id="title" placeholder="Bug Title"><br>
+  <textarea id="description" placeholder="Description"></textarea><br>
+  <select id="severity">
+    <option>Low</option>
+    <option>Medium</option>
+    <option>High</option>
+  </select><br>
+  <input type="text" id="assigned_to" placeholder="Assign To (Developer Username)"><br>
+  <input type="text" id="created_by" placeholder="Created By"><br>
+  <button onclick="addBug()">Submit</button>
+  <script src="script.js"></script>
+</body>
+</html>

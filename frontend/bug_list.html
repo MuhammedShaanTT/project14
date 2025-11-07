@@ -1,0 +1,49 @@
+<nav>
+  <a href="dashboard.html">Dashboard</a> |
+  <a href="add_bug.html">Add Bug</a> |
+  <a href="bug_list.html">Bug List</a> |
+  <a href="login.html">Logout</a>
+</nav>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bug List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Bug List</h2>
+
+  <div>
+    <label>Filter by Status:</label>
+    <select id="statusFilter" onchange="filterBugs()">
+      <option value="">All</option>
+      <option value="Open">Open</option>
+      <option value="In Progress">In Progress</option>
+      <option value="Closed">Closed</option>
+    </select>
+
+    <label>Filter by Severity:</label>
+    <select id="severityFilter" onchange="filterBugs()">
+      <option value="">All</option>
+      <option value="Low">Low</option>
+      <option value="Medium">Medium</option>
+      <option value="High">High</option>
+    </select>
+  </div>
+
+  <table border="1" id="bugTable">
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Severity</th>
+      <th>Status</th>
+      <th>Assigned To</th>
+      <th>Created By</th>
+    </tr>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>

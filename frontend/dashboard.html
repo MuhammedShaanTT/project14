@@ -1,0 +1,29 @@
+<nav>
+  <a href="dashboard.html">Dashboard</a> |
+  <a href="add_bug.html">Add Bug</a> |
+  <a href="bug_list.html">Bug List</a> |
+  <a href="login.html">Logout</a>
+</nav>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Dashboard</h2>
+  <button onclick="window.location='add_bug.html'">Add Bug</button>
+  <table border="1" id="bugTable">
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Severity</th>
+      <th>Status</th>
+      <th>Assigned To</th>
+    </tr>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
